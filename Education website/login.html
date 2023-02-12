@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <title>THE Test page</title>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA- Compatible" content="IEedge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="login.css">
+   </head>
+  <body>
+    
+    <section class="h-50 gradient-form" style="background-color: #eee;">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-xl-10">
+            <div class="card rounded-3 text-black">
+              <div class="row g-0">
+                <div class="col-lg-6">
+                  <div class="card-body p-md-5 mx-md-4">
+    
+                    <div class="text-center">
+                      <img src="images/logo.png"
+                        style="width: 185px;" alt="logo">
+                      <h4 class="mt-1 mb-5 pb-1">Yeneta online learning</h4>
+                    </div>
+    
+                  <form>
+                      <p>Please login to your account</p>
+                      <form>
+                        <div class="form-group">
+                          <label for="L_email">Email address</label>
+                          <input type="email" class="form-control" id="L_email" aria-describedby="emailHelp" placeholder="Enter email">
+                        
+                        </div>
+                        <div class="form-group">
+                          <label for="l_pass">Password</label>
+                          <input type="password" class="form-control" id="l_pass" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary" onclick="signIn()">login</button>
+                      </form>
+    
+                      <div class="d-flex align-items-center justify-content-center pb-4 col-md-12">
+                        <p class="mb-0 me-2">Don't have an account?</p><div class="text-center">
+                          <a href="" class="btn btn-default btn-rounded mb-4 bg-primary text-light" data-toggle="modal" data-target="#modalRegisterForm"> Register</a>
+                        </div>
+                        
+                      </div> 
+                  </form>
+                  
+ <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold" >Sign up</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <form name="myform">
+      <div class="modal-body mx-3">
+        
+        <div class="md-form mb-3">
+           
+          <label   for="orangeForm-name">Your name</label>
+          <input type="text" id="fname" class="form-control validate" name="firstName" required>
+        </div>
+        <div class="md-form mb-3">
+           
+          <label   for="orangeForm-name">Last name</label>
+          <input type="text" id="lname" class="form-control validate" name="lastName" required>
+        </div>
+        <div class="form-group p-1">
+          <label for="email"> Email </label>
+          <input type="email" class="form-control" name="email" id="email" />
+          <div id="email-validation" class="invalid-feedback">Please Check Mail again.</div>
+        
+        </div>
+       
+
+        <div class="md-form mb-4">
+          
+          <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+          <input type="password" class="form-control validate" name="password" id="password" required>
+           </div>
+        <div>
+            <button type="submit" style="font-size: larger; color: #eee; border-radius: 5px; padding: 4px; background-color: black;" onclick="signUp()">Sign up</button>
+        </div>
+        
+        
+
+      </div>
+      <!-- <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-deep-orange"  type="submit" style="width: 50%;" >Sign up</button>
+      </div> -->
+      
+       
+    </form>  
+    </div>
+  </div>
+</div>
+
+
+                    
+    
+                  </div>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                  <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                    <h4 class="mb-4" >First choice for online education</h4>
+                    <p class="small mb-0" style="font-size: 20px;">We help Students of all levels prepare for the path ahead wherever it leads. 
+                      Our curated collection of business and technical courses help companies, governments,
+                      and nonprofits go further by placing learning at the center of their strategies.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="login.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+    <script>  
+      function validateform(){  
+      var name=document.myform.name.value;  
+      var password=document.myform.password.value;  
+        
+      if ( name==""){  
+        alert("Name can't be blank");  
+        return false;  
+      }else if(password.length<6){  
+        alert("Password must be at least 6 characters long.");  
+        return false;  
+        }  
+      }  
+    </script>  
+  </body>
+</html>
+
+

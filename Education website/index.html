@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-Yeneta cources</title>
+        <style>
+            .jumbotron{
+               background: linear-gradient(rgb(37 88 163), rgba(73, 77, 82, 0.5)),url("images/coverbackground.jpg") no-repeat center center;
+               background-size: cover;
+            }
+        </style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    <body id="home">
+        <header class="d-flex justify-content-around sticky-top bg-secondary container-fluid">
+            <div class="navbar navbar-dark ">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="education logo" width=auto height=auto>
+                    Yeneta
+                </a>
+            </div>
+            <div class="mx-auto">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link mb-0 h5" href="#home">Home<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mb-0 h5 text-white" href="about_us.html" >About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mb-0 h5 text-white " href="cources.html">Courses</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle mb-0 h5 text-white " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                More pages
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item mb-0 h5" href="instructor.html">Instructors</a>
+                                <a class="dropdown-item mb-0 h5" href="students_testimony.html">Students</a>
+                            </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mb-0 h5 text-white " href="contact_us.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div> <button> <a href="login.html">Login</a> </button></div>
+        </header>
+        <div class="jumbotron jumbotron-fluid  position-relative overlay-bottom mb-md-5 w-100">
+            <div class="container text-center my-5 py-5">
+                <h1 class="text-white mt-4 mb-4">Home</h1>
+                <label for="finder_1" class="d-none">
+                    <button type="search">Cources</button>
+                </label>
+                <div class="d-flex justify-content-center align-items-center ml-0 mr-0">
+                    <select name="" id="finder_1" class="form-select" style="height:10vh; width:20vw;">
+                        <option value="cources">Cources</option>
+                        <option value="Full Stack Web development">Full Stack Web development</option>
+                        <option value="Javascript full cource">Javascript full cource</option>
+                        <option value="python programming language">python programming language</option>
+                        <option value="Data structure and algorithm">Data structure and algorithm</option>
+                    </select>
+                    <div class="w-30">
+                     <input id="finder_2" type="text" class="input-group w-30" placeholder="type Courses" aria-label="type Courses" style="height:10vh;">
+                    </div>
+                    <div>
+                    <label for="finder_2" class="mb-0">
+                        <button class="btn btn-danger" type="button" id="button-addon1" style="height:10vh;">Search</button>
+                    </label>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <div class="container mb-md-5 mt-md-5">
+            <div class="row">
+                <div class="col">
+                <img src="images/aboutUs.jpg" alt="a girl reading a book" class="float-start" height=400px width=300px>
+                </div>
+                <div class="col">
+                <h1 class="text-center">About US</h1>
+                <h2 class="text-center">First choice for online education</h2>
+                <p class="text-wrap">We help Students of all levels prepare for the path ahead wherever it leads. 
+                Our curated collection of business and technical courses help companies, governments,
+                and nonprofits go further by placing learning at the center of their strategies.
+                </p>
+                <a href="about_us.html" class="text-white">
+                    <button type="button" class="btn btn-secondary">
+                        moreAboutUs
+                    </button>
+                </a>
+                </div>
+            </div>
+        </div>
+        <div class ="text-center mb-md-5 ml-3 mr-3">
+            <h1>Our Cources</h1>
+            <h2>Explore the cources</h2>
+            <div class="row mb-md-5 mt-md-5">
+                <div class="col hover-zoom mb-md-5 " id ="Course_1"> <img src="images/FullStackweb.jpg" alt="Full Stack Web development cource" width="300px" height="auto"></div>
+                <div class="col hover-zoom mb-md-5" id = "Course_2"> <img src="images/JSCource.jpg" alt="Javascript full cource" width="300px" height="auto"></div>
+                <div class="col hover-zoom mb-md-5" id ="Course_3"> <img src="images/PythonCource.jpg" alt="python progamming language" width="300px" height="auto"></div>
+                <div class="col hover-zoom mb-md-5" id ="Course_4"> <img src="images/learnToCode.jpg" alt="Data structure and algorithm" width="300px" height="auto"></div>
+                </div>
+                <a href="cources.html" class="text-white">
+                    <button type="button" class="btn btn-secondary mb-md-3 mt-md-3">
+                        Explore Cources
+                    </button>
+                </a>
+        </div>
+
+        <!--
+            This is a sample video. when the website starts and we get the real testimoial the text 
+            below will be the caption/transcript of the video and the audio is the full description 
+            of how the video goes for persons who have an eye disabilitiy to make the full action of 
+            the video understandable. 
+        -->
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div>
+                            <h1>Our Students</h1>
+                            <h2>WE get Real time experiance</h2>
+                            <p>Hi, my name is Prachi Pal, and I'm 20 years old.I'm currently pursuing my economics honours degree from Lady Shri Ram College for Women, 
+                                University of Delhi. At the moment I wish to pursue a research internship.Thank you.Initially, I just wanted to be a good student and 
+                                perhaps pursue a masters degree soon after my bachelors degree. 
+                                <span lang="am">E-Yeneta</span>  website exposed me to an amazing culture where there is great cource in all things and at all times.
+                                And after i started learninig with <span lang="am">E-Yeneta</span> using real life projects.
+                            </p>
+                            <audio controls>
+                                <source src="audio/selfIntroduction.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="col ml-0">
+                        <div>
+                            <video controls width=300px height=300px>
+                                <source src="videos/selfIntroduction.mp4"  type="video/mp4">
+                                <track label="English" kind="captions" title="English transcript" srclang="en" src="videos/selfIntroduction.vtt" default>
+                            </video>
+                        </div>
+                    </div>
+                  </div>
+               </div>
+        </div> 
+        <footer class="bg-secondary w-100">
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <h1 class="text-white">Get In Touch</h1>
+                        <ul class="text-white">
+                            <li>5kilo , addis ababa</li>
+                            <li>+251 97 867 2189</li>
+                            <li>email@example.com</li>
+                        </ul>
+                        <button id="facebook">
+                            <img src="images/facebook.png" alt="follow us on facebook" width="20px" height="20px">
+                        </button>
+                        <button id="twitter">
+                            <img class="w-2 h-1" src="images/twitter.png" alt="follow us on twitter" width="20px" height="20px">
+                        </button>
+                        <button id="messanger">
+                            <img src="images/messanger.png" alt="leave messsage on messanger" width="20px" height="20px">
+                        </button>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div> 
+                            <h1 class="text-white">Our cources</h1>
+                            <ul> 
+                                <li><a  class="list-item text-white" href="cources.html#Course_1" target="_blank">Full Stack Web development cource</a></li>
+                                <li><a  class="list-item text-white" href="cources.html#Course_2" target="_blank">Javascript full cource</a></li>
+                                <li><a  class="list-item text-white" href="cources.html#Course_3" target="_blank">python progamming language</a></li>
+                                <li><a  class="list-item text-white" href="cources.html#Course_4" target="_blank">Data structure and algorithm</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>  
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
+</body>
+</html>
