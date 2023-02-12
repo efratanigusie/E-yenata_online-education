@@ -4,16 +4,22 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Cources</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <title>Cource detail</title>
+        <link rel="stylesheet" href="style.css">
         <style>
             .jumbotron{
                background: linear-gradient(rgb(37 88 163), rgba(73, 77, 82, 0.5)),url("images/coverbackground.jpg") no-repeat center center;
                background-size: cover;
             }
         </style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     </head>
-    <body id="course">
+    <body id="courceDetail">
+        <!-- 
+            This page is for know designed for the full stack web development 
+        to show how the layout goes, but we will have a cource detail for each 
+        cource that will be implemented as soon us we start teaching the cources!!!
+        -->
         <header class="d-flex justify-content-around sticky-top bg-secondary container-fluid w-100">
             <div class="navbar navbar-dark ">
                 <a class="navbar-brand" href="#">
@@ -35,7 +41,7 @@
                                 <a class="nav-link mb-0 h5 text-white" href="about_us.html" >About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mb-0 h5 text-white " href="#course"><span class="sr-only">(current)</span>Courses</a>
+                                <a class="nav-link mb-0 h5 text-white " href="cources.html">Courses</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle mb-0 h5 text-white " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -56,7 +62,7 @@
         </header>
         <div class="jumbotron jumbotron-fluid  position-relative overlay-bottom mb-md-5 w-100">
             <div class="container text-center my-5 py-5">
-                <h1 class="text-white mt-4 mb-4">Cources</h1>
+                <h1 class="text-white mt-4 mb-4">Cource Details</h1>
                 <label for="finder_1" class="d-none">
                     <button type="search">Cources</button>
                 </label>
@@ -79,72 +85,92 @@
               </div>
             </div>
         </div>
-        <div class ="container text-center mb-5 mt-5">
-            <h1>Our Cources</h1>
-            <h2>Explore the cources</h2>
+        <div class="container mt-4">
             <div class="row">
-                <div class="col bg-image" >
-                    <div  id ="Course_1" class="hover-zoom  mb-3 mt-3"> 
-                        <img src="images/FullStackweb.jpg" alt="Full Stack Web development cource" width="250px" height="auto">
-                    </div>
-                    <button class = "btn btn-secondary  mb-3 mt-3"><a class="text-white" href="cource_detail.html">Cource Detail</a></button>
+                <div class="mb-5 mt-5 col-sm-12 col-md-6">
+                    <video controls width=100% height=100% >
+                        <source src="videos/PythonCourseOutline.mp4" type="video/mp4"> 
+                        <track label="English" kind="captions" title="English transcript" srclang="en" src="videos/PythonCourseOutline.vtt" default>                                                                                               
+                    </video>
                 </div>
-                <div class="col bg-image">
-                    <div id = "Course_2" class="hover-zoom  mb-3 mt-3">
-                        <img src="images/JSCource.jpg" alt="Javascript full cource" width="250px" height="auto">
-                    </div>
-                    <button class = "btn btn-secondary  mb-3 mt-3"><a class="text-white" href="cource_detail2.html">Cource Detail</a></button>
+                <div class="col-sm-12 col-md-6">
+                    <table class="table-primary table-striped mb-5 mt-5" width=90% height=90%>
+                        <tr class="table-value-colspan-2">
+                            <th colspan="2" class="table-active">cource features</th>
+                        </tr>
+                        <tr>
+                            <th>cource name</th>
+                            <td id="cname">python</td>
+                        </tr>
+                        <tr>
+                            <th>Instructor</th>
+                            <td>John Doe</td>
+                        </tr>
+                        <tr>
+                            <th>Rating</th>
+                            <td>4.5(250)</td> 
+                        </tr>
+                        <tr>
+                            <th>Lectures</th>
+                            <td>15</td> 
+                        </tr>
+                        <tr>
+                            <th>Duration</th>
+                            <td>10 hr</td> 
+                        </tr>
+                        <tr>
+                            <th>Skill level</th>
+                            <td>All level</td> 
+                        </tr>
+                        <tr>
+                            <th>Language</th>
+                            <td>English</td> 
+                        </tr>
+                        <tr>
+                            <td>Cource price : free</td>
+                        </tr>
+                        <tr class="table-value-colspan-2 align-items-center justify-content-center">
+                            <td id="submit-btn" class="btn-danger text-center" >Enroll now</td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="col bg-image">
-                    <div id ="Course_3" class="hover-zoom  mb-3 mt-3"> <img src="images/PythonCource.jpg" alt="python progamming language" width="250px" height="auto">
-                    </div>
-                    <button class = "btn btn-secondary  mb-3 mt-3"><a class="text-white" href="cource_detail3.html">Cource Detail</a></button>
-                </div>
-                <div class="col bg-image">
-                    <div id ="Course_4" class="hover-zoom  mb-3 mt-3">
-                        <img src="images/learnToCode.jpg" alt="Data structure and algorithm" width="250px" height="auto">
-                    </div>
-                    <button class ="btn btn-secondary  mb-3 mt-3"><a  class="text-white" href="cource_detail4.html">Cource Detail</a></button>
-                </div>
-            </div>
-        </div>
-        <footer class="bg-secondary w-100">
-            <div class="container mt-4">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6">
-                        <h1 class="text-white">Get In Touch</h1>
-                        <ul class="text-white">
-                            <li>5kilo , addis ababa</li>
-                            <li>+251 97 867 2189</li>
-                            <li>email@example.com</li>
-                        </ul>
-                        <button id="facebook">
-                            <img src="images/facebook.png" alt="follow us on facebook" width="20px" height="20px">
-                        </button>
-                        <button id="twitter">
-                            <img class="w-2 h-1" src="images/twitter.png" alt="follow us on twitter" width="20px" height="20px">
-                        </button>
-                        <button id="messanger">
-                            <img src="images/messanger.png" alt="leave messsage on messanger" width="20px" height="20px">
-                        </button>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <div> 
-                            <h1 class="text-white">Our cources</h1>
-                            <ul> 
-                                <li><a  class="list-item text-white" href="cources.html#Course_1" target="_blank">Full Stack Web development cource</a></li>
-                                <li><a  class="list-item text-white" href="cources.html#Course_2" target="_blank">Javascript full cource</a></li>
-                                <li><a  class="list-item text-white" href="cources.html#Course_3" target="_blank">python progamming language</a></li>
-                                <li><a  class="list-item text-white" href="cources.html#Course_4" target="_blank">Data structure and algorithm</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>  
-        </footer>
+            </div>  
     </div>
-    <script src="script.js"></script>
+    <footer class="bg-secondary w-100">
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h1 class="text-white">Get In Touch</h1>
+                    <ul class="text-white">
+                        <li>5kilo , addis ababa</li>
+                        <li>+251 97 867 2189</li>
+                        <li>email@example.com</li>
+                    </ul>
+                    <button id="facebook">
+                        <img src="images/facebook.png" alt="follow us on facebook" width="20px" height="20px">
+                    </button>
+                    <button id="twitter">
+                        <img class="w-2 h-1" src="images/twitter.png" alt="follow us on twitter" width="20px" height="20px">
+                    </button>
+                    <button id="messanger">
+                        <img src="images/messanger.png" alt="leave messsage on messanger" width="20px" height="20px">
+                    </button>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div> 
+                        <h1 class="text-white">Our cources</h1>
+                        <ul> 
+                            <li><a  class="list-item text-white" href="cources.html#Course_1" target="_blank">Full Stack Web development cource</a></li>
+                            <li><a  class="list-item text-white" href="cources.html#Course_2" target="_blank">Javascript full cource</a></li>
+                            <li><a  class="list-item text-white" href="cources.html#Course_3" target="_blank">python progamming language</a></li>
+                            <li><a  class="list-item text-white" href="cources.html#Course_4" target="_blank">Data structure and algorithm</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>  
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
-</body>
+    </body>
 </html>
